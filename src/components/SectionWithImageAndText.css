@@ -1,0 +1,52 @@
+/* SectionWithImageAndText.css */
+.section-with-image-and-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.content-left,
+.content-right {
+    flex: 1;
+    /* Garantir que ambos ocupem 50% */
+}
+
+.content-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.content-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003366;
+
+}
+
+.content-right p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .section-with-image-and-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-left,
+    .content-right {
+        flex: none;
+        width: 100%;
+    }
+
+    .content-left img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
