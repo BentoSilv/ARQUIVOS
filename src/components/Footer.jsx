@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h2 className="footer-logo">MinhaEmpresa</h2>
+      <img src="/public/imagem/lg.png" alt="MinhaEmpresa" className="footer-logo-img" />
           <p>Transformando ideias em soluções digitais com excelência e inovação.</p>
         </div>
 
@@ -35,8 +35,8 @@ const Footer = () => {
           <h4>Contato</h4>
           <ul>
             <li>Email: contato@minhaempresa.com</li>
-            <li>WhatsApp: (99) 99999-9999</li>
-            <li>Endereço: Rua Exemplo, 123</li>
+            <li>WhatsApp: (+244) 931643911</li>
+            <li>Endereço: Rua Benfica-Luanda, 222</li>
           </ul>
           <div className="footer-social">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
