@@ -1,35 +1,31 @@
-// App.jsx
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Banner from './components/Banner';
-import './App.css';
-import CardSection from './components/CardSection.jsx';
-import SectionWithImageAndText from './components/SectionWithImageAndText.jsx'
-import Newsletter from './components/Newsletter.jsx'
-import Footer from './components/Footer.jsx';
-import WhatsAppButton from "./components/WhatsAppButton";
-
-
-
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import Servicos from './pages/Servicos';
+import Contacto from './pages/Contacto';
+import LoginPage from './pages/LoginPage';
+import './index.css';
 
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Banner />
-      <CardSection />
-      <SectionWithImageAndText />
-      <Newsletter />
+      <main className="conteudo">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/login" element={<LoginPage />} />
+          
+        </Routes>
+      </main>
       <Footer />
-      <WhatsAppButton />
-      
-
-
-    </div>
+    </Router>
   );
 }
-
-
 
 export default App;
